@@ -58,8 +58,11 @@ class Owner
   end
   
   def sell_pets
-    Cat.all.each {|cat| cat.mood = "nervous" && cat.owner = nil if cat.owner == self}
-    Dog.all.each {|dog| dog.mood = "nervous" && dog.owner = nil if dog.owner == self}
+    Cat.all.each do |cat|
+      if cat.owner == self
+        binding.pry
+      end
+    end
   end
   
 end
