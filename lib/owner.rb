@@ -3,6 +3,8 @@ class Owner
   
   attr_reader :owner, :species
   
+  @@all
+  
   def initialize(name)
     @owner = name
     @species = "human"
