@@ -58,8 +58,8 @@ class Owner
   end
   
   def sell_pets
-    Cat.all.each do |cat|
-      if cat.owner == self
+    Cat.all.each do |kitty|
+      if kitty.owner == self
         binding.pry
       end
     end
