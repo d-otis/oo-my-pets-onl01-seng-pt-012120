@@ -7,4 +7,8 @@ class Owner
     @owner = name
   end
   
+  def name
+    @owner
+  end
+  
 end
