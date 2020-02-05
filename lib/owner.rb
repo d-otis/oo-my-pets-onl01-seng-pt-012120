@@ -60,7 +60,8 @@ class Owner
   def sell_pets
     Cat.all.each do |kitty|
       if kitty.owner == self
-        binding.pry
+        kitty.owner = nil
+        kitty.mood = "nervous"
       end
     end
   end
